@@ -12,25 +12,70 @@
   --grey-color: #757575;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Roboto', sans-serif, Arial, Helvetica, sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
   background-color: var(--third-white-color);
   color: var(--second-black-color);
+  max-width: 1600px;
+  margin: 0;
+  padding: 0;
 }
 
 .main-list-style {
   list-style: none;
 }
 
+.global-li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
 /* navigation section*/
 
 .header-container {
   background-color: var(--white-color);
+  
 }
 
+.nav-container {
+  display: flex;
+  align-items: center;
+  /*display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;*/
+}
+
+
 .logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+
   font-family: 'Raleway', sans-serif;
   color: var(--black-color);
   font-size: 26px;
@@ -43,13 +88,25 @@ body {
   color: var(--blue-color);
 }
 .nav-site {
+  display: flex;
+}
+.nav-site .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+
+.nav-site-item {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   text-decoration: none;
+
   color: var(--second-black-color);
+
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: 0.02em;
-}
-
+} 
 .nav-site-item:hover,
 .nav-site-item:focus {
   color: var(--blue-color);
@@ -60,6 +117,9 @@ body {
 }
 
 .nav-contact {
+  display: flex;
+  margin-left: auto;
+
   text-decoration: none;
   color: var(--grey-color);
   line-height: 1.1;
@@ -67,11 +127,32 @@ body {
   font-weight: 500;
 }
 
+.nav-contact .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-contact-item {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .nav-contact-item:hover,
 .nav-contact-item:focus {
   color: var(--blue-color);
   text-shadow: none;
 }
+
+.main-list-style {
+
+}
+
+.main-list-style:not(:last-child) {
+
+}
+
+
+
 
 /*footer section*/
 
@@ -110,11 +191,21 @@ body {
 
 /* MAIN PAGE */
 /* hero section*/
+
 .hero {
   background-color: var(--third-black-color);
+  max-width: 1600px;
+  height: 600px;
+  align-items: center;
+  justify-self: center;
 }
 
 .hero-headline {
+  text-align: center;
+  vertical-align:middle;
+  justify-self: start;
+  width: 50%;
+  
   color: var(--white-color);
   font-size: 44px;
   line-height: 1.4;
@@ -123,6 +214,9 @@ body {
 }
 
 .hero-button {
+  text-align: center;
+  margin: 30px auto auto;
+
   cursor: pointer;
   background-color: var(--blue-color);
   color: var(--white-color);
