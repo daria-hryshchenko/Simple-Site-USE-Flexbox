@@ -28,7 +28,6 @@ body {
   font-family: 'Roboto', sans-serif, Arial, Helvetica, sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
-  background-color: var(--third-white-color);
   color: var(--second-black-color);
   max-width: 1600px;
   margin: 0;
@@ -313,6 +312,9 @@ body {
   margin-bottom: 94px;
 }
 
+.team-item {
+  width: 270px;
+}
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -345,9 +347,20 @@ body {
   margin-top: 94px;
   text-align: center;
   margin-bottom: 50px;
-  
+
   font-size: 36px;
   line-height: 1.1;
+}
+
+.first-portfolio-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+
+.portfolio-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .portfolio-items {
@@ -366,13 +379,35 @@ body {
   color: var(--white-color);
 }
 
+.second-portfolio-ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 94px;
+}
+
+.box-portfolio {
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.box-portfolio:nth-child(3n) {
+  margin-right: 0;
+}
+
 .project-name {
+  margin-top: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
 .project-department {
+  margin: 4px 24px 20px;
+
   color: var(--grey-color);
   font-size: 16px;
   line-height: 1.8;
