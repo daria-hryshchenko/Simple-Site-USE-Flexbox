@@ -33,7 +33,7 @@ ul {
 body {
   font-family: 'Roboto', sans-serif, Arial, Helvetica, sans-serif;
   color: var(--second-black-color);
-  background-color: var(--third-white-color);
+  background-color: var(--white-color);
 }
 
 .main-list-style {
