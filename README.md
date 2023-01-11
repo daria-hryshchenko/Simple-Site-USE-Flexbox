@@ -1,8 +1,8 @@
 Homework 📚
 
-➡️ Learning the CSS
+➡️  Improve My HTML & CSS Skills
 
-➡️ Clone the created repository and copy the files of the previous work into it.
+➡️ Cloned the previous lesson repository.
 
 ➡️ Add styles for geometry (widths, padding, margins and borders) and content positioning with Flexbox for homework layout pages #3.
 
